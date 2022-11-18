@@ -1,0 +1,19 @@
+server:
+  port: 8191
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: never
+    include-exception: false
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5433/carpooling
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+
